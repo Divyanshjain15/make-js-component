@@ -37,6 +37,7 @@ Can't find the framework or the options you need? Checkout the [Contributing gui
 ```bash
 npx make-js-component
 ```
+
 This command will start a short wizard that will create your component in a few steps.
 
 ### Options
@@ -62,7 +63,7 @@ npx make-js-component --folder <PATH>
 Set which framework your component is for.
 
 ```bash
-npx make-js-component --framework [vue|angular|react|svelte|qwik|astro]
+npx make-js-component --framework [vue|angular|react|svelte|qwik|astro|solidjs]
 ```
 
 #### --[framework]
@@ -71,7 +72,7 @@ You can specify the desired framework directly by adding a flag. The available f
 
 ```bash
 #this will create a vue component
-npx make-js-component --vue
+npx make-js-component --solidjs
 ```
 
 #### --multiple
@@ -85,26 +86,38 @@ npx make-js-component --multiple
 ## Available Frameworks
 
 ### Vue
+
 > Want to help with vue components? Check out [Vue related issues](https://github.com/Giuliano1993/make-js-component/issues?q=is%3Aissue+is%3Aopen+label%3AVue)
 
 When choosing Vue, the wizard will ask you whether you prefer to use the **Options API** or the **Composition API**, and you can make your selection using the arrow keys.
 
 ### React
+
 > Want to help with React components? Check out [React related issues](https://github.com/Giuliano1993/make-js-component/issues?q=is%3Aissue+is%3Aopen+label%3AReact)
 
 When choosing React, the wizard will ask you if you want to use **TypeScript** or not, and you can make your selection using the arrow keys.
 
 ### Angular
+
 > Want to help with Angular components? Check out [Angular related issues](https://github.com/Giuliano1993/make-js-component/issues?q=is%3Aissue+is%3Aopen+label%3AAngular)
 
 ### Qwik
+
 > Want to help with Qwik components? Check out [Qwik related issues](https://github.com/Giuliano1993/make-js-component/issues?q=is%3Aissue+is%3Aopen+label%3AQwik)
 
 ### Svelte
+
 > Want to help with Svelte components? Check out [Svelte related issues](https://github.com/Giuliano1993/make-js-component/issues?q=is%3Aissue+is%3Aopen+label%3ASvelte)
 
 ### Astro
+
 > Want to help with Astro components? Check out [Astro related issues](https://github.com/Giuliano1993/make-js-component/issues?q=is%3Aissue+is%3Aopen+label%3AAstro)
+
+### SolidJS
+
+> Want to help with SolidJS components? Check out [SolidJS related issues](https://github.com/Giuliano1993/make-js-component/issues?q=is%3Aissue+is%3Aopen+label%3ASolidJS)
+
+When choosing SolidJS, the wizard will generate a component using the standard SolidJS structure with TypeScript support.
 
 ## Contributing
 
@@ -116,9 +129,9 @@ If you're cloning the repo, both for contributing or just to start taking confid
 
 1. clone the repo with `git clone https://github.com/Giuliano1993/make-js-component`
 2. inside the folder run `npm install`
-3. then to transpile ts files into js and watch them,  run `npm run dev`
+3. then to transpile ts files into js and watch them, run `npm run dev`
 
-To run your local version of the package and test it, run 
+To run your local version of the package and test it, run
 
 ```bash
 npx .
