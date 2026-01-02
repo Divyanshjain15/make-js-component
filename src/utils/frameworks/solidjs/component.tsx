@@ -17,3 +17,23 @@ const Button: Component<{ label: string }> = (props) => {
 
 export default Button;
 `;
+
+export const CardTemplate = `
+import { Component } from "solid-js";
+
+const Card: Component = (props) => {
+  return <div>{props.children}</div>;
+};
+
+export default Card;
+`;
+
+export const NavbarTemplate = `
+import { Component } from "solid-js";
+
+const Navbar: Component = () => {
+  return <nav>Navbar</nav>;
+};
+
+export default Navbar;
+`;
